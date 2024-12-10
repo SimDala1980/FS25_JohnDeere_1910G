@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="track710_45R26_5" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="8" filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5.png"/>
+    <File fileId="2" filename="$data/shared/crawlers/olofsfors/track_normal.png"/>
+    <File fileId="3" filename="$data/shared/crawlers/olofsfors/track_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="track_mat" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="motionPath_secondUV_colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mTrackArray" fileId="8"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0 0 0 0"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="scrollPosition" value="0 0 0 0"/>
+      <CustomParameter name="prevScrollPosition" value="0 0 0 0"/>
+      <CustomParameter name="lengthAndRadius" value="2 0.5 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="track710_45R26_5.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="ECOtrack" nodeId="13">
+        <Shape shapeId="1" name="ECOtrackShape0" clipDistance="300" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="EVObaltic" nodeId="15">
+        <Shape shapeId="2" name="EVObalticShape0" clipDistance="300" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="EX" nodeId="17">
+        <TransformGroup name="EXRight" nodeId="18">
+          <Shape shapeId="3" name="EXRightShape0" clipDistance="300" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="EXLeft" nodeId="20">
+          <Shape shapeId="4" name="EXLeftShape0" clipDistance="300" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="KovaX" nodeId="22">
+        <TransformGroup name="KovaXLeft" nodeId="23">
+          <Shape shapeId="5" name="KovaXLeftShape0" clipDistance="300" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="KovaXRight" nodeId="25">
+          <Shape shapeId="6" name="KovaXRightShape0" clipDistance="300" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="Magnum" nodeId="27">
+        <Shape shapeId="7" name="MagnumShape0" clipDistance="300" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

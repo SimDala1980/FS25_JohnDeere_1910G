@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motor template="engineLarge" file="$data/vehicles/johnDeere/series6R/sounds/series6R_loop.gls" volumeScale="1.1" linkNodeOffset="0 2.0 3.3"/>
+            <motor template="indoorCabinRumble" />
+            <gearbox template="transmissionForestry" file="$data/sounds/vehicles/transmission/transmissionLoop.ogg" pitchScale="1.9" volumeScale="0.70" linkNodeOffset="0 1.0 -0.5"/>
+            <compressedAir template="compressedAir"/>
+            <airCompressorRun template="brakeCompressorLarge" />
+            <airCompressorStop template="compressedAir"/>
+            <reverseDrive template="REVERSE_BEEP_03" />
+            <motor template="filterLoop" pitchScale="0.35" volumeScale="0.8" fadeIn="0.4" fadeOut="4" linkNodeOffset="0 2.0 4"/>
+        </sounds>
+    </motorized>
+
+    <lights>
+        <sounds>
+            <toggleLights template="SWITCH_01"  />
+            <turnLight template="SWITCH_TURNLIGHT"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="ATTACH_01" />
+            <hydraulic template="defaultHydraulicSound" />
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="WATER_SPLASH_01" />
+        </sounds>
+    </drivable>
+
+    <honk>
+        <sound template="hornDefault" pitchScale="0.85" linkNode="JD1910G_main_component1" />
+    </honk>
+</sounds>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="90">
+	<author>SimDala, NMC, Hazemodding</author>
+    <version>2.3.0.1</version>
+    
+	<title>
+		<en>JD 1910G</en>
+    </title>
+    
+	<description>
+        <en>
+<![CDATA[
+The mammoth 1910G from John Deere features a low-wide bunk (VLS) that folds for transport, bigger tires for better ride comfort compared to other forwarders and higher ground clearance.  Rotating, self-leveling cab turns 290 deg. for an all-around view of boom movements for efficient log loading. A powerful CF8 crane with a Deere 040 grapple
+
+
+Specifications:
+Horsepower: 280-320 HP
+Boom Reach: 7.2 m
+Rotating, self-leveling cab turns 290 deg.
+Load Rating: 19 000 kg with VLS
+Decking Blade and Engine Grill Guard
+
+Changelog 2.3.0.1:
+-Added height movement to cabin camera follow crane mode
+
+Changelog 2.0.0.0:
+-New Grill In Front
+-Corrected Dirt Map On Hood
+-Fixed Black Spot On Door
+-New Chair/Seat
+-Changed Engines Name
+-Added More BrakeForce
+-Tweaked The Engine
+-Added More Weight (So The Machine Don't Tip Over With Full Load)
+]]>
+		</en>
+		<de>
+<![CDATA[
+Der Mammut 1910G von John Deere verfügt über eine niedrige, aber breite Ladefläche (VLS), die für den Transport zusammengeklappt werden kann, die größeren Reifen sorgen für einen besseren Fahrkomfort und eine höhere Bodenfreiheit.
+Die selbst-neigende Kabine ist um 290 Grad drehbar, dies sorgt für einen besseren Überblick des Arbeitsbereichs, zusätzlich sorgt es für einen besseren Blick auf den Kran, was die Arbeit erheblich vereinfacht.
+Für eine effiziente Verladung des Holzes verfügt der John Deere 1910G über einen CF8-Kran mit einem Deere 040 Greifer.
+
+
+Spezifikationen:
+Leistung: 280-320 PS
+Reichweite des ausziehbaren Arms: 7,2 m
+Die drehbare und selbststabilisierende Kabine ist um 290 Grad drehbar.
+Belastbarkeit: 19 000 kg mit VLS
+Deckblatt- und Motorgrill-Schutz
+
+Changelog 2.0.0.0
+-Schutz vorne neu gebaut
+- Dirt map der haube neu gemacht
+-Schwarze flecken auf der Tür entfernt
+-Neuer Sitz
+-Motor Namen getauscht
+-Bremskraft erhöht
+-Motorleistung angepasst
+-Gewicht erhöht für besseres Handling im beladenen zustand
+]]>
+		</de>
+		<fr>
+<![CDATA[
+La mammouth 1910G de John Deere se caractérise par une couchette basse largeur (VLS) qui se plie pour le transport, des pneus plus gros pour un confort de conduite supérieur à celui des autres porteurs et une garde au sol plus élevée. La cabine rotative et à mise à niveau automatique tourne de 290 degrés. pour une vue d'ensemble des mouvements de la flèche pour un chargement efficace des grumes. Une puissante grue CF8 avec un grappin Deere 040.
+
+
+Caractéristiques:
+Puissance: 280-320 HP
+Portée de la rampe: 7,2 m
+La cabine rotative et à mise à niveau automatique tourne de 290 degrés.
+Capacité de charge: 19 000 kg avec VLS
+Lame de platelage et grille de protection moteur
+
+Changelog 2.0.0.0:
+-Nouveau Grill Devant
+- Carte de saleté corrigée sur le capot
+-Fixe noire sur la porte
+-Nouvelle chaise / siège
+-Nom des moteurs changés
+-Added Plus BrakeForce
+-Tweaked le moteur
+-Ajoute plus de poids (pour que la machine ne bascule pas avec une charge complète)
+]]>
+		</fr>
+    </description>
+
+	<l10n>
+		<text name="NoBladeNoGrill">
+            <de>Stützfuß, Grill Montiert</de>
+            <en>Blade,Grill,CabProtect Removed</en>
+        </text>
+		<text name="NoBladeNoGrillWithCabProtect">
+            <de>Stützfuß, Grill Montiert</de>
+            <en>CabProtect Mounted</en>
+        </text>
+		<text name="BladeWithFrontGrill">
+            <de>Stützfuß, Grill Montiert</de>
+            <en>Blade,Grill Mounted</en>
+        </text>
+		<text name="BladeWithFrontGrillCabProtect">
+            <de>Stützfuß, Grill Montiert</de>
+            <en>Blade,Grill,CabProtect Mounted</en>
+        </text>
+		<text name="NoBladeWithFrontGrillAndCabProtect">
+            <de>Stützfuß, Grill Montiert</de>
+            <en>Grill,CabProtect Mounted</en>
+        </text>
+		<text name="BladeNoFrontGrillWithCabProtect">
+            <de>Stützfuß, Grill Montiert</de>
+            <en>Blade,CabProtect Mounted</en>
+        </text>
+		<text name="BladeNoFrontGrillNoCabProtect">
+            <de>Stützfuß, Grill Montiert</de>
+            <en>Blade Mounted</en>
+        </text>
+		<text name="action_steeringModeON">
+			<en>Automatic Crane Tracking</en>
+			<de>Automatische Kranverfolgung</de>
+		</text>
+		<text name="action_steeringModeOFF">
+			<en>Manual Cabin Control</en>
+			<de>Manuelle Kabinensteuerung</de>
+		</text>
+        <text name="configuration_ALS">
+            <en>ALS</en>
+        </text>
+        <text name="configuration_Norrlandsrede">
+            <en>Norrlandsrede</en>
+        </text>
+	</l10n>
+	
+    <iconFilename>jd1910g_icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+	
+	<storeItems>
+        <storeItem xmlFilename="JD1910G.xml"/>
+    </storeItems>
+	<vehicleTypes>
+		<type name="JD1910G" parent="forwarder" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+		</type>
+	</vehicleTypes>
+	
+</modDesc>

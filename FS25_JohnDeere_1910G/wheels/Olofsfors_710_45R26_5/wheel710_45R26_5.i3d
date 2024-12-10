@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="wheel710_45R26_5" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="7" filename="$data/shared/crawlers/olofsfors/proGripU_diffuse.png" />
+    <File fileId="8" filename="$data/shared/crawlers/olofsfors/proGripU_normal.png" />
+    <File fileId="9" filename="$data/shared/crawlers/olofsfors/proGripU_vmask.png" />
+    <File fileId="4" filename="$data/shared/crawlers/olofsfors/proGrip_diffuse.png" />
+    <File fileId="5" filename="$data/shared/crawlers/olofsfors/proGrip_normal.png" />
+    <File fileId="6" filename="$data/shared/crawlers/olofsfors/proGrip_vmask.png" />
+    <File fileId="1" filename="$data/shared/crawlers/olofsfors/track_normal.png" />
+    <File fileId="2" filename="$data/shared/crawlers/olofsfors/track_vmask.png" />
+  </Files>
+
+  <Materials>
+    <Material name="track_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" customShaderId="3" customShaderVariation="secondUV_colorMask">
+      <CustomParameter name="colorMat0" value="0.0 0.4047 0.7519 0.0"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="proGrip_mat" materialId="2" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.0 0.4047 0.7519 0.0"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="proGripU_mat" materialId="3" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat2" value="0.0 0.4047 0.7519 0.0"/>
+      <CustomParameter name="colorMat3" value="0.0 0.4047 0.7519 0.0"/>
+      <CustomParameter name="colorMat0" value="0.0 0.4047 0.7519 0.0"/>
+      <CustomParameter name="colorMat1" value="0.0 0.4047 0.7519 0.0"/>
+      <CustomParameter name="colorMat6" value="0.0 0.4047 0.7519 0.0"/>
+      <CustomParameter name="colorMat7" value="0.0 0.4047 0.7519 0.0"/>
+      <CustomParameter name="colorMat4" value="0.0 0.4047 0.7519 0.0"/>
+      <CustomParameter name="colorMat5" value="0.0 0.4047 0.7519 0.0"/>
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wheel710_45R26_5.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="ECOtrack" nodeId="1">
+      <Shape name="ECOtrack_rot" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2"/>
+    </TransformGroup>
+    <TransformGroup name="EVObaltic" nodeId="3">
+      <Shape name="EVObaltic_rot" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="4"/>
+    </TransformGroup>
+    <TransformGroup name="EX" nodeId="5">
+      <TransformGroup name="EXLeft" nodeId="6">
+        <Shape name="EXLeft_rot" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="7"/>
+      </TransformGroup>
+      <TransformGroup name="EXRight" nodeId="8">
+        <Shape name="EXRight_rot" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="9"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="KovaX" nodeId="10">
+      <TransformGroup name="KovaXLeft" nodeId="11">
+        <Shape name="KovaXLeft_rot" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="12"/>
+      </TransformGroup>
+      <TransformGroup name="KovaXRight" nodeId="13">
+        <Shape name="KovaXRight_rot" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="14"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="Magnum" nodeId="15">
+      <Shape name="Magnum_rot" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="16"/>
+    </TransformGroup>
+    <TransformGroup name="ProGripF" nodeId="17">
+      <Shape name="ProGripF_rot" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="18"/>
+    </TransformGroup>
+    <TransformGroup name="ProGripU" nodeId="19">
+      <Shape name="ProGripU_rot" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="20"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>
